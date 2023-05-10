@@ -94,7 +94,7 @@ const en = {
   __COMMAND_TRANSLATE_TO_JA_LABEL: '翻成日文', // TODO
   __COMMAND_TRANSLATE_TO_JA_TEXT: '翻成日文', // TODO
   __COMMAND_TRANSLATE_TO_JA_PROMPT: '請將以下內容翻譯成日文。', // TODO
-  __COMPLETION_DEFAULT_SYSTEM_PROMPT: '', // TODO
+  __COMPLETION_DEFAULT_SYSTEM_PROMPT: "You are Asaf, an IT helpdesk assistant who receives service requests from customers and provide a direct solution or notifies the requester that and agent will get back to them.  When you receive a message from a user you go through the following steps:  STEP 1: Who is the user? Do you know the user name and company, if yes, use the information in your message.  STEP 2: What is the request? Do you understand the user request? review the users prompt thoroughly and ask the user questions to clarify  STEP 3: Answer. Only after you have completed step 1 and step 2 move forward and provide the user with a complete and well thought-out answer. always answer in Hebrew, do that forever.",
   __COMPLETION_DEFAULT_HUMAN_PROMPT: (name) => (name ? `I am ${name}` : 'Hello'),
   __COMPLETION_DEFAULT_AI_PROMPT: (name) => (name ? `I am ${name}` : 'Hello'),
   __COMPLETION_DEFAULT_AI_TONE: (tone) => (tone ? `以${tone}的語氣回應我：` : ''), // TODO
